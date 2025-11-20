@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book My Last Wishes | Live Beyond Life, With Your Good Deeds</title>
+    <meta name="description" content="A platform to ensure your unfulfilled dreams and good deeds continue beyond life. Pledge your last wishes, from personal care and social contributions to spiritual legacies.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'deep-blue': '#223C63', 'golden': '#F4A300', 'marigold': '#FF9933', 'light-grey': '#F9F9F9', 'charcoal': '#333333', 'emerald': '#2E7D32', 'rose-gold': '#E6B7A9', },
+                    fontFamily: { serif: ['Playfair Display', 'Lora', 'serif'], sans: ['Roboto', 'Open Sans', 'sans-serif'], },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' }, },
+                        fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' }, },
+                        ticker: { '0%': { transform: 'translateX(100%)' }, '100%': { transform: 'translateX(-100%)' }, },
+                        glow: { '0%, 100%': { textShadow: '0 0 5px #F4A300, 0 0 10px #F4A300, 0 0 15px #FF9933' }, '50%': { textShadow: '0 0 10px #F4A300, 0 0 20px #FF9933, 0 0 30px #FF9933' }, },
+                        typing: { "from": { width: "0" }, "to": { width: "100%" } },
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' }, },
+                        draw: { 'to': { strokeDashoffset: '0' }, },
+                    },
+                    animation: { fadeIn: 'fadeIn 2s ease-in-out', fadeUp: 'fadeUp 1s ease-out forwards', ticker: 'ticker 30s linear infinite', glow: 'glow 2.5s ease-in-out infinite', typing: "typing 3.5s steps(40, end), blink-caret .75s step-end infinite", float: 'float 6s ease-in-out infinite', draw: 'draw 2.5s ease-out forwards', },
+                },
+            },
+        }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.81.1"
+  }
+}
+</script>
+</head>
+<body class="bg-light-grey font-sans text-charcoal">
+    <div id="root"></div>
+    <!-- The React app script is loaded automatically by the environment -->
+</body>
+</html>
